@@ -1,5 +1,3 @@
-import InsigniaSet from "./data/sets.json";
-
 function on_input() {
 	inpt = document.getElementById("response").value;
 	console.log("He replied: ", inpt);
@@ -14,5 +12,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
-	console.log(InsigniaSet);
+	const dat = await fetch("./data/sets.json");
+	const set = JSON.parse(dat);
+	console.log(set);
 });
