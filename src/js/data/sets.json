@@ -1,0 +1,37 @@
+{
+	"EjercitoArgentino": {
+		"hierarchies": [
+			"tropa",
+			"suboficiales",
+			"oficiales"
+		],
+		"tropa": [
+			"voluntario_segunda_comision",
+			"voluntario_segunda",
+			"voluntario_primera"
+		],
+		"suboficiales": [
+			"cabo",
+			"cabo_primero",
+			"sargento",
+			"sargento_primero",
+			"sargento_ayudante",
+			"suboficial_principal",
+			"suboficial_mayor",
+			"suboficial_mayor"
+		],
+		"oficiales": [
+			"subteniente",
+			"teniente",
+			"teniente_primero",
+			"capitan",
+			"mayor",
+			"teniente_coronel",
+			"coronel",
+			"coronel_mayor",
+			"general_brigada",
+			"general_division",
+			"teniente_general"
+		]
+	}
+}
