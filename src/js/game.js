@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 		console.log(_jso);
 	} catch (e) {
+		const _res = await fetch("./data/sets.json");
 		if (e instanceof SyntaxError) {
 			console.log("could not parse: ", _res);
 			console.log(e.cause);
