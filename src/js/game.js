@@ -12,6 +12,16 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
-	const dat = await (await fetch("./data/sets.json")).json();
-	console.log(dat);
+	try {
+		const response = await fetch("./data/sets.json");
+		const jso = await response.json();
+
+		console.log(jso);
+	} catch (e) {
+		if (e instanceof SyntaxError) {
+			console.log("could not parse: ", response);
+			console.log(e.cause);
+			console.log(e.message);
+		}
+	}
 });
