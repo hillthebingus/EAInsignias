@@ -12,7 +12,6 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", async () => {
-	const dat = await fetch("./data/sets.json");
-	const set = JSON.parse(dat);
-	console.log(set);
+	const dat = await (await fetch("./data/sets.json")).json();
+	console.log(dat);
 });
